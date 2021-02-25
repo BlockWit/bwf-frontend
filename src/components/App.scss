@@ -1,0 +1,18 @@
+//@import "~bootstrap-scss";
+@import "~admin-lte";
+
+
+// sidebar/SidebarHeader
+.bwf-brand-image {
+  opacity: .8;
+  margin-left: .2rem;
+}
+
+[class*=sidebar-dark] .brand-link {
+  border-bottom: 1px solid #4b545c;
+  color: rgba(255,255,255,.8);
+}
+
+.sidebar-dark-primary {
+  background: linear-gradient(to top, #0c606d, #00032d);
+}
