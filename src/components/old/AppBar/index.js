@@ -6,7 +6,7 @@ import {makeStyles} from '@material-ui/core/styles';
 import { defaultTheme } from "react-admin";
 import { createMuiTheme } from '@material-ui/core/styles';
 
-import logo from '../../logo-white.png';
+import logo from '../../../logo-white.png';
 
 const theme = createMuiTheme({
     ...defaultTheme,
@@ -32,7 +32,7 @@ const useStyles = makeStyles({
 const CustomAppBar = props => {
     const classes = useStyles();
     return (
-        <AppBar theme={theme} {...props} style={{ backgroundColor: '#002b4e' }}>
+        <AppBar theme={theme} {...props} style={{ backgroundColor: '#002b4e' }} elevation={0}>
             <Toolbar>
                 <img src={logo} alt="logo" className={classes.logo}/>
             </Toolbar>

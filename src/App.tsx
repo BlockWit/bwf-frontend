@@ -1,17 +1,14 @@
 import * as React from "react";
-import {Admin, Resource} from 'react-admin';
-import {AccountList} from './Accounts/index';
-import {PermissionList} from './Permissions/index';
-import {RoleList} from './Roles/index';
-import {PropertyList} from './Properties/index';
-import jsonServerProvider from './DataProvider/index';
+import {Admin, Layout, Resource} from 'react-admin';
+import {AccountList} from './components/old/Accounts';
+import {PermissionList} from './components/old/Permissions';
+import {RoleList} from './components/old/Roles';
+import {PropertyList} from './components/old/Properties';
+import jsonServerProvider from './components/old/DataProvider';
 import AccountsIcon from '@material-ui/icons/Group';
-//import AccountsIcon from '@material-ui/icons/Group';
-import Dashboard from './Dashboard';
-import authProvider from './Security/authProvider';
-
-import { Layout } from 'react-admin';
-import CustomAppBar from './AppBar/index';
+import Dashboard from './components/old/Dashboard';
+import authProvider from './components/old/Security/authProvider';
+import CustomAppBar from './components/old/AppBar';
 
 class CustomLayout extends React.Component {
     render() {
